@@ -1,0 +1,147 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+}
+
+body {
+    
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Top navigation bar */
+.top-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 15px;
+    color: #fff;
+}
+
+.top-nav .logo {
+    font-size: 1.5em;
+    font-weight: bold;
+    align-items: left;
+}
+
+.search-bar input {
+    padding: 8px;
+    font-size: 1em;
+    width: 500px;
+}
+
+.auth-buttons {
+    margin-left: 10px;
+    padding: 8px 15px;
+    color: #fff;
+    background-color: #555;
+    border: none;
+    cursor: pointer;
+}
+
+.auth-buttons button:hover {
+    background-color: #777;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 200px;
+    background-color: #f4f4f4;
+    padding: 30px;
+    position: absolute;
+    top: 157px;
+    bottom: 0;
+    height: 760px;
+    overflow-y: auto;
+    font-weight: 200;
+    font-style: normal;
+    cursor: pointer;
+}
+
+.sidebar h2 {
+    margin-bottom: 10px;
+    font-optical-sizing: auto;
+    font-weight:  bold;
+    font-style: normal;
+    font-size: 30px;
+}
+
+.sidebar ul {
+    list-style: none;
+}
+
+.sidebar li {
+    padding: 10px 0;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.sidebar li:hover {
+    color: #333;
+}
+
+/* Main content */
+.main-content {
+    margin-left: 220px;
+    padding: 20px;
+    flex: 1;
+    font-size: 20px;
+}
+
+/* Featured Movie Banner */
+.featured-banner {
+    background-color: #222;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.banner-image img {
+    width: 100%;
+    max-height: 300px;
+    object-fit: cover;
+}
+
+/* Movie List */
+/* Movie List */
+/* Movie List */
+.movie-list {
+    display: flex;
+    justify-content: space-between; /* Space out the movies horizontally */
+    flex-wrap: nowrap; /* Keeps the movies in a single row */
+    gap: 20px; /* Adds space between movie items */
+}
+
+.movie-item {
+    background-color: #ddd;
+    padding: 20px;
+    width: 18%; /* Set a fixed width to fit 5 items across the row */
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    border-radius: 5px;
+}
+
+.movie-item:hover {
+    background-color: #bbb;
+}
+
+/* Footer */
+.footer {
+    background-color: #333;
+    color: #fff;
+    text-align: left;
+    padding: 20px;
+    margin-top: 50px;
+    margin-left: 200px;
+}
+
+.contact-info p {
+    margin-top: 5px;
+}
